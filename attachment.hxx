@@ -1,6 +1,5 @@
 
-#ifndef ATTACH_HXX
-#define ATTACH_HXX
+#pragma once
 
 #include <memory>
 #include <windows.h>
@@ -81,5 +80,3 @@ private:
 	}
 };
 inline const auto c_already_debugged = std::make_unique<already_debugged>( );
-
-#endif // !ATTACH_HXX
