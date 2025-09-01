@@ -4,11 +4,11 @@ I have gone through x64dbgs source code and looked at their attachment process, 
 1. include attachment.hxx
 2. call the "start" function at the very start of your program, example below:
 ```cpp
-auto main(int argc, char* argv[]) -> int
+int main(int argc, char* argv[])
 {
 	c_already_debugged->start(argc, argv);
 
-	printf("attachment disabled\n");
+	std::printf("attachment disabled\n");
 	std::cin.get();
 
 	return 0;
