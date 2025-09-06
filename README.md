@@ -15,8 +15,4 @@ int main(int argc, char* argv[])
 }
 ```
 
-### showcase:
-
-https://github.com/user-attachments/assets/13582dc6-6acb-42e8-8816-49121975d674
-
 
