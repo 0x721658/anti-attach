@@ -6,7 +6,7 @@ simple trick, self debugs your own process preventing debuggers like x64dbg from
 ```cpp
 int main(int argc, char* argv[])
 {
-	c_already_debugged->start(argc, argv);
+	c_already_debugged->dispatch(argc, argv);
 
 	std::printf("attachment disabled\n");
 	std::cin.get();
