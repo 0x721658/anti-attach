@@ -1,4 +1,4 @@
-I have gone through x64dbgs source code and looked at their attachment process, i see they use ``CheckRemoteDebuggerPresent`` to make sure your program isnt already being debugged, if it is it throws a error and doesnt let you attach. Meaning if we exploit this and manipulate our process information to make x64dbg think it is already debugging your program, x64dbg wont be able to attach.
+simple trick, self debugs your own process preventing debuggers like x64dbg from attaching
 
 ## how to implement
 1. include attachment.hxx
